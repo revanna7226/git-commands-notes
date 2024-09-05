@@ -58,7 +58,7 @@ git stash push -m "message to temp save"
 
 git stash list
 
-git apply <stash-index>
+git stash apply <stash-index>
 
 git stash drop <stash-index>
 
