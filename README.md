@@ -52,15 +52,21 @@ git diff
 11. Use git stash when you want to record the current state of the working directory and the index, but want to go back to a clean working directory.
     https://git-scm.com/docs/git-stash
 ```bash
+# push the intermediate changes with index reference
 git stash
 
+# push the intermediate changes with a message
 git stash push -m "message to temp save"
 
+# to check for all the stashes
 git stash list
 
+# to load a perticular changes use index to load
 git stash apply <stash-index>
 
+# to remove a stash with an index
 git stash drop <stash-index>
 
+# need to check what is it
 git stash clear
 ```
